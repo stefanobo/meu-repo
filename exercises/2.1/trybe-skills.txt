@@ -2,6 +2,7 @@ O que eu vou aprender na Trybe:
 
 - Unix
 - Bash
+-JavaScript
 -Git
 -HTML
 -CSS
