@@ -20,9 +20,10 @@ background-color: rgb(245, 206, 135);
     text-align: center;
     border-radius: 10px;
 }
-img {
+.lagosta {
     width: 700px;
-    max-height: 300px;
+    max-height: 400px;
+    border-radius: 3px;
 }
 nav {
     margin-left: 45%;
@@ -42,4 +43,18 @@ h3 {
     padding: 10px;
     text-align: center;
     border-radius: 10px;
+}
+#info-soco {
+    font-size: large;
+    margin-right: 500px;
+    margin-left: 0px;
+    background-color: #83c8e7;
+    border-radius: 16px;
+    padding: 10px;
+
+}
+.lagostaboxeadora {
+    width: 450px;
+    margin-right: 20px;
+    border-radius: 360px;
 }
