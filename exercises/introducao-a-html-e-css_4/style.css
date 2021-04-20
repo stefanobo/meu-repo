@@ -1,5 +1,5 @@
 body {
-background-image: url(https://planet-lean.com/wp-content/uploads/2019/01/Efficient-product-design-under-the-sea-1.jpg);
+background-color: #f5f5f5;
 z-index: 1;
 }
 .header {
@@ -10,10 +10,11 @@ text-align: center;
 font-size: xx-large;
 border-radius: 10px;
 padding: 5px;
-background-color: rgb(245, 206, 135);
+background-image:url(https://upload.wikimedia.org/wikipedia/commons/4/40/Nusa_Lembongan_Reef.jpg);
+background-size: contain;
 }
 #ostomatopoda {
-    background-color:rgb(35, 74, 245);
+    background-image: url(https://www.futurity.org/wp/wp-content/uploads/2009/11/bubbles3.jpg);
     margin-right: 70%;
     margin-left: 100px;
     padding: 10px;
@@ -37,7 +38,7 @@ nav {
     padding: 16px;
 }
 h3 {
-    background-color:rgb(135, 152, 245);
+    background-image: url(https://www.futurity.org/wp/wp-content/uploads/2009/11/bubbles3.jpg);
     margin-left: 30%;
     margin-right: 30%;
     padding: 10px;
@@ -80,4 +81,9 @@ h3 {
 }
 footer {
     text-align: center;
+}
+.referencias .creditos {
+    color: white;
+    text-decoration: white;
+    z-index: 3;
 }
