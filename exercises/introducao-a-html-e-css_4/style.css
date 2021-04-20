@@ -43,6 +43,7 @@ h3 {
     padding: 10px;
     text-align: center;
     border-radius: 10px;
+    font-size: x-large;
 }
 #info-soco {
     font-size: large;
@@ -57,4 +58,26 @@ h3 {
     width: 450px;
     margin-right: 20px;
     border-radius: 360px;
+}
+.colorido {
+    padding: 50px;
+    background-image: url(https://previews.123rf.com/images/kittybitty/kittybitty1601/kittybitty160100006/50916431-psychedelic-rainbow-spiral-background-texture.jpg);
+    border-radius: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    z-index: 1;
+}
+#visao {
+    font-size: large;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+}
+.desenholagosta {
+    width: 220px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+footer {
+    text-align: center;
 }
