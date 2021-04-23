@@ -148,6 +148,7 @@ if (notaDada < 0 || notaDada > 100) {
     } else {
         let salarioMenosINSS = salarioBruto - 570.88;
     }
+    let salarioLiquido = 0;
 
     if (salarioMenosINSS >= 1903.98) {
         console.log('isento de imposto de renda')
