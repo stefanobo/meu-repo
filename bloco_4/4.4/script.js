@@ -101,14 +101,31 @@ let info = {
 
   let arrayTeste = [2, 4, 6, 7, 10, 0, -3];
 
-  function indiceDoMaior(numeros) {
-    let indiceMaior = 0;
+  function indiceDoMenor(numeros) {
+    let indiceMenor = 0;
     for (let indice in numeros) {
-      if (numeros[indiceMaior] > numeros[indice]) {
-        indiceMaior = indice;
+      if (numeros[indiceMenor] > numeros[indice]) {
+        indiceMenor = indice;
       }
     }
-    return indiceMaior;
+    return indiceMenor;
   }
   
-  console.log(indiceDoMaior(arrayTeste))
+  console.log(indiceDoMenor(arrayTeste))
+
+  //ex 4
+
+  let arrayDeTeste = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+
+  function maiorQuantidadeCaracteres (palavra) {
+      let indiceMaior = 0;
+      for (let key in palavra) {
+      if (palavra[indiceMaior].length < palavra[key].length) {
+        indiceMaior = key;
+      }
+     }
+     return palavra[indiceMaior];
+  }
+
+  console.log(maiorQuantidadeCaracteres(arrayDeTeste));
+
