@@ -34,3 +34,21 @@ let names = {
   for (let key in carro) {
       console.log(key, carro[key])
   }
+
+  // EXS Parte 1 - Objetos e For/in
+
+  let info = {
+    personagem: 'Margarida',
+    origem: 'Pato Donald',
+    nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+  };
+//ex1
+  console.log('Bem-vinda, ' + info.personagem);
+//ex2
+  info.recorrente = 'Sim';
+
+  console.log(info.recorrente);
+
+  for (let key in info) {
+        console.log(key);
+  }
