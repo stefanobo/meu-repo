@@ -85,22 +85,30 @@ let info = {
 
   //ex 2
 
-  let arrayTeste = [2, 3, 6, 7, 10, 1];
-
-  function retornaMaiorValor (arrayAlvo) {
-      let maiorNumero;
-      let indiceMaior;
-      for (let index = 0; index < arrayAlvo.length; index += 1) {
-        if (arrayAlvo[index] > arrayAlvo[index + 1]) {
-            maiorNumero = arrayAlvo[index]
-        }
+  function indiceDoMaior(numeros) {
+    let indiceMaior = 0;
+    for (let indice in numeros) {
+      if (numeros[indiceMaior] < numeros[indice]) {
+        indiceMaior = indice;
       }
-      for (let index2 = 0; index2 < arrayAlvo.length; index2 += 1) {
-          if (maiorNumero === arrayAlvo[index2]) {
-            indiceMaior = index2
-          }
-      }
-      return indiceMaior;
-  };
+    }
+    return indiceMaior;
+  }
+  
+  console.log(indiceDoMaior([2, 3, 6, 7, 10, 1]));
 
-  console.log(retornaMaiorValor(arrayTeste))
+  //ex 3
+
+  let arrayTeste = [2, 4, 6, 7, 10, 0, -3];
+
+  function indiceDoMaior(numeros) {
+    let indiceMaior = 0;
+    for (let indice in numeros) {
+      if (numeros[indiceMaior] > numeros[indice]) {
+        indiceMaior = indice;
+      }
+    }
+    return indiceMaior;
+  }
+  
+  console.log(indiceDoMaior(arrayTeste))
