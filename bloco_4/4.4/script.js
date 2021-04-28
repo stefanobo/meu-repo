@@ -129,3 +129,68 @@ let info = {
 
   console.log(maiorQuantidadeCaracteres(arrayDeTeste));
 
+//ex 5
+
+let arrayTeste = [2, 3, 2, 5, 8, 2, 3];
+
+function moda (arr) {
+    return ((arr.sort((a, b) =>
+    (arr.filter(v => v === a).length) - (arr.filter(v => v === b).length))
+  ).pop())
+  }
+
+  console.log(moda(arrayTeste));
+
+  //ex 6
+
+  let n = 5;
+
+  function somaTodos (numero) {
+      let somaTudo = 0;
+      let somaValor;
+    for (let index = 1; index <= numero; index += 1) {
+        somaValor = index;
+        somaTudo += somaValor;
+    }
+    return somaTudo;
+  }
+
+  console.log(somaTodos(n));
+
+  //ex 7
+
+  let strWord = 'trybe';
+  let strEnd = 'be';
+
+  function verificaFimPalavra (palavra, final) {
+    let letrasFinal = final.split('');
+    let letrasPalavra = palavra.split('');
+    let letrasFinalNumero = final.length;
+    let contagem = true;
+    for (let index = 0; index < letrasFinal.length; index += 1) {
+        if (palavra[palavra.length - final.length + index] != letrasFinal[index]) {
+            contagem = false;
+        }
+    } return contagem;
+    }
+
+    console.log(verificaFimPalavra(strWord, strEnd))
+    console.log(verificaFimPalavra('joaofernando', 'fernan'));
+
+   // outra resolucao function verificaFimPalavra (palavra, final) {
+    //    let letrasFinal = final.split('');
+   //     let letrasPalavra = palavra.split('');
+   //     let letrasFinalNumero = final.length;
+    //    let contagem = 0;
+  //      console.log(letrasFinal);
+    //    for (let index = palavra.length - 1; index >= palavra.length - final.length; index -= 1) {
+     //       for (let index2 = final.length - 1; index2 >= 0; index2 -= 1) {
+    //            if (letrasPalavra[index] === letrasFinal[index2]) {
+     //               contagem += 1;
+     //           }
+     //       }
+     //       console.log(contagem);
+     //       if (contagem == letrasFinalNumero) {
+     //           return true
+     //       } else {return false}
+     //   }})
