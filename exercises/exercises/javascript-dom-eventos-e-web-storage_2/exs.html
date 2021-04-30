@@ -61,6 +61,18 @@
         let h1novo = document.createElement('h1');
         h1novo.innerHTML = 'Exercício 5.2 - JavaScript DOM';
         pai.appendChild(h1novo);
+        //ex2
+        let maincontent = document.createElement('div');
+        maincontent.className = 'main-content';
+        pai.appendChild(maincontent);
+        //ex3
+        let centercontent = document.createElement('div');
+        centercontent.className = 'center-content';
+        maincontent.appendChild(centercontent);
+        //ex4
+        let paragrafo = document.createElement('p');
+        paragrafo.innerHTML = 'Que dia bonito';
+        centercontent.appendChild(paragrafo);
     </script>
   </body>
 </html>
