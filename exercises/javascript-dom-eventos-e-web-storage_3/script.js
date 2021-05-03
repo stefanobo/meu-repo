@@ -47,3 +47,15 @@ function createDaysOfTheWeek() {
   }
 
   createDaysOfDecember();
+
+  //ex 2
+
+  function createsHolidaysButton(buttonName) {
+    let criaBotao = document.createElement('button');
+    
+
+    criaBotao.innerHTML = buttonName;
+    criaBotao.id = "btn-holiday";
+    document.querySelector('.buttons-container').appendChild(criaBotao);
+  }
+  createsHolidaysButton('Feriados');
