@@ -59,3 +59,22 @@ function createDaysOfTheWeek() {
     document.querySelector('.buttons-container').appendChild(criaBotao);
   }
   createsHolidaysButton('Feriados');
+
+  //ex 3
+  
+   function mudaCorButton() {
+    let button = document.querySelector('#btn-holiday');
+    let feriadosColor = document.querySelector('.holiday');
+    let backgroundColor = 'rgb(238,238,238)';
+    let setNewColor = 'blue';
+
+    button.addEventListener('click', function() {
+        for (let contador = 0; contador < feriadosColor.length; contador += 1) {
+        if (feriadosColor[contador].style.backgroundColor === setNewColor)  {
+            feriadosColor[contador].style.backgroundColor = backgroundColor;} else {
+          feriadosColor[contador].style.backgroundColor = setNewColor;}}
+         })
+        }
+
+    mudaCorButton();
+    
