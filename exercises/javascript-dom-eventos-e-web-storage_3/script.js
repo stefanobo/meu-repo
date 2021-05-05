@@ -77,4 +77,98 @@ function createDaysOfTheWeek() {
         }
 
     mudaCorButton();
+    //ex 4
+
+function criaBotaoSexta (botaoNome) {
+    let getCointainer = document.querySelector('.buttons-container')
+    let criaBotao = document.createElement('button')
+    let botaoID = 'btn-friday'
     
+    criaBotao.innerHTML = botaoNome;
+    criaBotao.id = botaoID;
+    getCointainer.appendChild(criaBotao)
+}
+
+criaBotaoSexta('Sexta-feira');
+
+//ex5
+
+function mudaCorSexta (fridaysArray) {
+    let getButton = document.querySelector('.btn-friday');
+    let getFriday = document.querySelector('.friday');
+    let newFridayText = 'Sextou';
+
+    getButton.addEventListener('click', function() {
+        for (i = 0; i < getFriday.length; i += 1) {
+            if (getFriday[i].innerHTML !== newFridayText) {
+                getFriday[i].innerHTML = newFridayText;
+            } else {
+                getFriday[i].innerHTML = fridaysArray[index];
+            }
+        }
+    })
+}
+let dezFridays = [ 4, 11, 18, 25 ];
+mudaCorSexta(dezFridays);
+
+//ex6
+
+function magnifyText () {
+    let dias = document.querySelector('.day')
+
+    dias.addEventListener('mouseover', function(evento) {
+        evento.target.style.fontSize = 'xx-large';
+    })
+}
+
+function deMagnifyText () {
+    let dias = document.querySelector('.day');
+
+    dias.addEventListener('mousout', function(evento) {
+        evento.target.style.fontSize = 'normal'
+    })
+}
+
+magnifyText();
+deMagnifyText();
+
+//ex 7
+
+function adiocionaTarefa (nomeTarefa) {
+    let getTasks = document.querySelector('.my-tasks');
+    let criaTask = document.createElement('span');
+    criaTask.innerHTML = nomeTarefa;
+    getTasks.appendChild(criaTask);
+}
+
+adiocionaTarefa('cozinhar')
+
+//ex 8
+
+function adcCor (cor) {
+    let getTasks = document.querySelector('.my-tasks');
+    let criaLegenda = document.createElement('div');
+
+    criaLegenda.className = 'task';
+    criaLegenda.style.backgroundColor = cor;
+    getTasks.appendChild(criaLegenda);
+}
+
+adcCor('green');
+
+//ex 9
+
+function select () {
+let getTask = document.querySelector('.task');
+let newClass = 'task selected'
+
+getTask.addEventListener('click', function(event){
+    if (getTask.className !== newClass) {
+        event.target.className = newClass;
+    } else {
+        event.target.className = 'task'
+    }
+})
+}
+
+select();
