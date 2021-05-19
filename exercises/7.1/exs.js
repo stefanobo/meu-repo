@@ -50,3 +50,44 @@ function testingScope(escopo) {
   }
  
   console.log(retornaCrescente(oddsAndEvens));
+
+  //Parte 2
+
+  //ex1
+  const numero = 4;
+
+  const retornaFatorial = numero => {
+      let fatorial = 0;
+    for (let index = numero - 1; index > 0; index -= 1) {
+        fatorial += numero * index
+    }
+    return fatorial
+  }
+
+  console.log(retornaFatorial(numero))
+
+  //ex2
+
+  longestWord("Antônio foi no banheiro e não sabemos o que aconteceu") // retorna 'aconteceu'
+
+  const findsLongestWord = word => {
+    let individualWord = word.split(' ');
+    let maiorPalavra = individualWord[0];
+
+    for (let index = 1; index < individualWord.length; index += 1) {
+        if (individualWord[index].length > maiorPalavra.length ) {
+            maiorPalavra = individualWord[index]
+        }
+    }
+    console.log(maiorPalavra)
+  }
+
+  findsLongestWord("Antônio foi no banheiro e não sabemos o que aconteceu");
+
+  //ex3 
+
+  let clickCount = 0;
+
+  botao.addEventListener('click', (count) => {
+      let clickCount
+  })
