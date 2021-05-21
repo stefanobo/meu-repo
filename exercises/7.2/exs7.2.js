@@ -137,3 +137,14 @@ const numTotalStudents = lessons => {
 }
 
 numTotalStudents(allLessons);
+
+//ou
+
+const TotalStudentsFor = lessons => {
+for (let i = 1; i < lessons.length; i += 1) {
+    const classNum = 
+}
+}
+
+// ex 7
+
