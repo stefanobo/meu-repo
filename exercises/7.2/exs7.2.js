@@ -59,3 +59,81 @@ const order = {
   }
   
   orderModifier(order);
+
+
+  // EXS PARTE 2
+
+//   ex1
+
+  const lesson1 = {
+    materia: 'Matemática',
+    numeroEstudantes: 20,
+    professor: 'Maria Clara',
+    turno: 'manhã',
+  };
+  
+  const lesson2 = {
+    materia: 'História',
+    numeroEstudantes: 20,
+    professor: 'Carlos',
+  };
+  
+  const lesson3 = {
+    materia: 'Matemática',
+    numeroEstudantes: 10,
+    professor: 'Maria Clara',
+    turno: 'noite',
+  };
+
+  const adiocionaTurno = (lesson, chave, valor) => {
+    lesson[chave] = valor;
+    console.log(lesson2)
+  }
+
+//   adiocionaTurno(lesson2, 'turno', 'manhã');
+
+//   ex 2
+
+const listsKeys = objeto => {
+   console.log(Object.keys(objeto))
+}
+
+// listsKeys(lesson3);
+
+// ex 3
+
+const objectSize = objeto => {
+    console.log(Object.keys(objeto).length)
+}
+
+// objectSize(lesson3)
+
+// ex 4
+
+const listValues = objeto => {
+    console.log(Object.values(objeto))
+}
+
+// listValues(lesson3);
+
+// ex 5
+
+const allLessons = [];
+
+Object.assign(allLessons, {lesson1, lesson2, lesson3});
+
+console.log(allLessons)
+
+// ex 6
+
+const numTotalStudents = lessons => {
+    const class1 = lessons.lesson1.numeroEstudantes;
+    const class2 = lessons.lesson2.numeroEstudantes;
+    const class3 = lessons.lesson3.numeroEstudantes;
+
+    const totalNum = class1 + class2 + class3;
+
+    console.log(totalNum);
+}
+
+numTotalStudents(allLessons);
