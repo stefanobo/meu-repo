@@ -19,3 +19,5 @@ const obj3 = {
 
 assert.deepStrictEqual(obj1, obj2);
 assert.deepStrictEqual(obj1, obj3);
+
+// resposta: obj1 e obj2 são idênticos, obj3 é diferente e por isso não passa
