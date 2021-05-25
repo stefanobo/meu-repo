@@ -29,3 +29,30 @@ const newEmployees = () => {
  }
 
  randomNumberGen(5, checkWin)
+
+ // ex 3
+
+const rightAnswers = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const studentAnswers = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+ const gradeGenerator = (correct, student, gradeCount) => {
+   console.log(gradeCount(correct, student));
+ }
+
+ const gradeCount = (answer, studentAnswer) => {
+   let points = 0;
+
+   for (let index = 0; index < answer.length; index += 1) {
+      if (answer[index] === studentAnswer[index]) {
+         points += 1;
+      } else if (studentAnswer[index] === 'N.A') {
+         points += 0;
+      } else {
+         points -= 0.5;
+      };
+   };
+
+   return points;
+ }
+
+ gradeGenerator(rightAnswers, studentAnswers, gradeCount);
