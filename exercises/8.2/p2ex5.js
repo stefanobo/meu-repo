@@ -81,7 +81,7 @@ const expectedResult = [
       }
    })
 
-   return newArr.sort((a, b) => a.localeCompare(b));
+   return newArr.sort();
  }
  
  assert.deepStrictEqual(fantasyOrScienceFictionAuthors(), expectedResult);
