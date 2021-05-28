@@ -65,22 +65,13 @@ const books = [
 
 // Adicione o código do exercício aqui:
 
-const expectedResult = [
-   'O Senhor dos Anéis',
-   'Fundação',
-   'O Chamado de Cthulhu',
- ];
- 
- function oldBooks() {
-   // escreva seu código aqui
-   const newArr = [];
-   const oldBooks = books.map((book) =>{
-      if (2020 - book.releaseYear > 60) {
-      newArr.push(book.name);
-      }
-   })
-   
-   return newArr;
- }
- 
- assert.deepStrictEqual(oldBooks(), expectedResult);
+const expectedResult = 'O Senhor dos Anéis';
+
+function authorWith3DotsOnName() {
+  // escreva seu código aqui
+  return books.find((book) => (
+   book.author.name.split(' ').filter((word) => word.endsWith('.').length === 3))
+  )
+}
+
+assert.deepStrictEqual(authorWith3DotsOnName(), expectedResult);
